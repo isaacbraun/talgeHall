@@ -301,22 +301,34 @@
 
         .dropdown-container {
             position: fixed;
-            top: 70px;
-            left: 36px;
+            top: 80px;
+            left: 2.5%;
             z-index: 4;
+            font-size: 1.1rem;
+            font-family: 'Open Sans', sans-serif;
         }
         .dropdown-icon-container {
             position: relative;
-
+            width: 32px;
+            height: auto;
         }
-        .dropdown-icon {
-            fill: white;
+        .dropdown-icon-container svg {
+            fill: #999999;
+        }
+        .dropdown-icon-container svg:hover {
+            fill: #8CC63F;
         }
         .dropdown-menu {
             background: #194A2D;
+            margin: 3px 0;
+            min-width: 175px;
         }
         .dropdown-menu-item {
             color: white;
+            margin: 0;
+            padding: 10px 20px;
+            border-bottom: 1px solid;
+            font-size: 1.1rem;
         }
     </style>
     
@@ -336,11 +348,14 @@
     </div>
     <div class="dropdown-container" id="dropdown">
         <div class="dropdown-icon-container">
-            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32; fill: white;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
             </svg>
         </div>
         <div class="dropdown-menu">
+            <svg width="15" height="15">
+                <rect width="15" height="15" style="fill:#194A2D;" />
+            </svg>
             <p class="dropdown-menu-item">
                 Hello World
             </p>
