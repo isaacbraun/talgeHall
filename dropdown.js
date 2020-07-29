@@ -5,7 +5,6 @@ function dropdown() {
 
     if (menu.style.display == 'none') {
         menu.style.display = 'block';
-        menu.style.height = 'auto';
     }
     else {
         menu.style.display = 'none';
