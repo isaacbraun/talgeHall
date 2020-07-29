@@ -332,11 +332,17 @@
             fill: #194A2D;
         }
         .dropdown-menu-item {
-            color: white;
             margin: 0;
             padding: 10px 20px;
-            border-bottom: 1px solid;
+            border-bottom: 1px solid white;
             font-size: 1.1rem;
+        }
+        .dropdown-menu-item a {
+            color: white;
+            text-decoration: none;
+        }
+        .dropdown-menu-item a:visited {
+            color: white;
         }
     </style>
     
@@ -365,7 +371,9 @@
                 <rect width="15" height="15" />
             </svg>
             <p class="dropdown-menu-item">
-                Hello World
+                <a href="">
+                    Hello World
+                </a>
             </p>
         </div>
     </div>
