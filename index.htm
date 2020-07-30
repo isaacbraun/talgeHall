@@ -321,19 +321,19 @@
         }
 
         .dropdown-menu-container {
+            min-width: 175px;
+            margin: 3px 0;
+            position: relative;
             max-height: 0px;
             overflow: hidden;
-            position: relative;
-
+            transition: max-height .6s ease-in, overflow .6s linear;
         }
         .dropdown-menu-container.transition {
             max-height: 700px;
             overflow: visible;
         }
-
         .square {
             position: relative;
-            top: -7px;
             left: 8px;
             transform: rotateY(0deg) rotate(45deg);
             fill: #194A2D;
@@ -343,13 +343,9 @@
         }
         .dropdown-menu {
             background: #194A2D;
-            margin: 3px 0;
-            min-width: 175px;
             position: relative;
             border-radius: 5px;
-            /* max-height: 0px;
-            overflow: hidden; */
-            transition: all .6s ease-in-out;
+            top: 7px;
         }
         
         .dropdown-menu-item {
