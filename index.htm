@@ -311,7 +311,7 @@
         .dropdown-icon-container {
             position: relative;
             width: 32px;
-            height: auto;
+            height: 32px;
         }
         .dropdown-icon-container svg {
             fill: #999999;
@@ -319,35 +319,32 @@
         .dropdown-icon-container svg:hover {
             fill: #8CC63F;
         }
-
         .dropdown-menu-container {
             min-width: 175px;
-            margin: 3px 0;
             position: relative;
             max-height: 0px;
             overflow: hidden;
-            transition: max-height .6s ease-in, overflow .6s linear;
+            transition: max-height .5s ease-in, overflow .5s linear;
         }
         .dropdown-menu-container.transition {
             max-height: 700px;
-            overflow: visible;
         }
         .square {
             position: relative;
-            left: 8px;
-            transform: rotateY(0deg) rotate(45deg);
+            top: -5px;
+            left: 5px;
+            transform-origin: bottom left;
+            transform: rotate(45deg);
             fill: #194A2D;
-        }
-        .square.rotate {
-            transform: rotateY(0deg) rotate(45deg);
         }
         .dropdown-menu {
             background: #194A2D;
             position: relative;
             border-radius: 5px;
-            top: 7px;
+            top: -10px;
+            overflow: hidden;
+            max-height: inherit;
         }
-        
         .dropdown-menu-item {
             margin: 0;
             padding: 10px 20px;
