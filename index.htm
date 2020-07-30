@@ -319,26 +319,39 @@
         .dropdown-icon-container svg:hover {
             fill: #8CC63F;
         }
-        .dropdown-menu {
-            background: #194A2D;
-            margin: 3px 0;
-            min-width: 175px;
-            position: relative;
-            border: 2px solid #194A2D;
-            border-radius: 5px;
+
+        .dropdown-menu-container {
             max-height: 0px;
-            transition: all .4s ease-in-out;
+            overflow: hidden;
+            position: relative;
+
         }
-        .dropdown-menu.transition {
+        .dropdown-menu-container.transition {
             max-height: 700px;
+            overflow: visible;
         }
-        .dropdown-menu svg {
-            position: absolute;
+
+        .square {
+            position: relative;
             top: -7px;
             left: 8px;
             transform: rotateY(0deg) rotate(45deg);
             fill: #194A2D;
         }
+        .square.rotate {
+            transform: rotateY(0deg) rotate(45deg);
+        }
+        .dropdown-menu {
+            background: #194A2D;
+            margin: 3px 0;
+            min-width: 175px;
+            position: relative;
+            border-radius: 5px;
+            /* max-height: 0px;
+            overflow: hidden; */
+            transition: all .6s ease-in-out;
+        }
+        
         .dropdown-menu-item {
             margin: 0;
             padding: 10px 20px;
@@ -347,7 +360,7 @@
         .dropdown-menu-item a {
             color: white;
             text-decoration: none;
-            transition: all ease .4s;
+            transition: all ease .3s;
         }
         .dropdown-menu-item a:visited {
             color: white;
@@ -377,45 +390,47 @@
                 <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
             </svg>
         </div>
-        <div class="dropdown-menu" style="">
-            <svg width="15" height="15">
+        <div class="dropdown-menu-container">
+            <svg class="square" width="15" height="15">
                 <rect width="15" height="15" />
             </svg>
-            <p class="dropdown-menu-item">
-                <a href="">
-                    Hello World
-                </a>
-            </p>
-            <p class="dropdown-menu-item">
-                <a href="">
-                    Hello World
-                </a>
-            </p>
-            <p class="dropdown-menu-item">
-                <a href="">
-                    Hello World
-                </a>
-            </p>
-            <p class="dropdown-menu-item">
-                <a href="">
-                    Hello World
-                </a>
-            </p>
-            <p class="dropdown-menu-item">
-                <a href="">
-                    Hello World
-                </a>
-            </p>
-            <p class="dropdown-menu-item">
-                <a href="">
-                    Hello World
-                </a>
-            </p>
-            <p class="dropdown-menu-item">
-                <a href="">
-                    Hello World
-                </a>
-            </p>
+            <div class="dropdown-menu">
+                <p class="dropdown-menu-item">
+                    <a href="">
+                        Hello World
+                    </a>
+                </p>
+                <p class="dropdown-menu-item">
+                    <a href="">
+                        Hello World
+                    </a>
+                </p>
+                <p class="dropdown-menu-item">
+                    <a href="">
+                        Hello World
+                    </a>
+                </p>
+                <p class="dropdown-menu-item">
+                    <a href="">
+                        Hello World
+                    </a>
+                </p>
+                <p class="dropdown-menu-item">
+                    <a href="">
+                        Hello World
+                    </a>
+                </p>
+                <p class="dropdown-menu-item">
+                    <a href="">
+                        Hello World
+                    </a>
+                </p>
+                <p class="dropdown-menu-item">
+                    <a href="">
+                        Hello World
+                    </a>
+                </p>
+            </div>
         </div>
     </div>
 </body>

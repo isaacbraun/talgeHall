@@ -1,14 +1,9 @@
 function dropdown() {
-    let menu = document.getElementsByClassName('dropdown-menu')[0];
+    let menu = document.getElementsByClassName('dropdown-menu-container')[0];
+    let square = document.getElementsByClassName('square')[0];
 
     menu.classList.toggle('transition');
-
-    // if (menu.style.display == 'none') {
-    //     menu.style.display = 'block';
-    // }
-    // else {
-    //     menu.style.display = 'none';
-    // }
+    square.classList.toggle('rotate');
 };
 
 
