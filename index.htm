@@ -324,10 +324,11 @@
             position: relative;
             max-height: 0px;
             overflow: hidden;
-            transition: max-height .5s ease-in, overflow .5s linear;
+            transition: max-height .5s ease-out, overflow .5s linear;
         }
         .dropdown-menu-container.transition {
             max-height: 700px;
+            transition-timing-function: ease-in;
         }
         .square {
             position: relative;
